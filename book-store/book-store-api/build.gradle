@@ -1,0 +1,9 @@
+plugins {
+}
+
+dependencies {
+    implementation(
+            'org.springdoc:springdoc-openapi-ui:1.5.5',
+            'javax.validation:validation-api:2.0.1.Final'
+    )
+}

@@ -1,0 +1,4 @@
+rootProject.name = 'book-store'
+include 'book-store-api'
+include 'book-store-service'
+include 'book-store-app'

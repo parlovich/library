@@ -2,5 +2,9 @@
 .idea
 .vscode
 
+# build
+.gradle
+
 # terraform
-*.tfstate
+.terraform*
+*.tfstate*
