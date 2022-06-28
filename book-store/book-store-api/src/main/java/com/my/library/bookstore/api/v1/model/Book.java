@@ -10,6 +10,8 @@ public class Book {
     private String title;
     @NotNull
     private String author;
+    @NotNull
+    private String url;
 
     public UUID getId() {
         return id;
@@ -35,19 +37,12 @@ public class Book {
         this.author = author;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Book book = (Book) o;
-        return Objects.equals(id, book.id) &&
-                Objects.equals(title, book.title) &&
-                Objects.equals(author, book.author);
+    public String getUrl() {
+        return url;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, title, author);
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     @Override
@@ -56,6 +51,7 @@ public class Book {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", author='" + author + '\'' +
+                ", url='" + url + '\'' +
                 '}';
     }
 }

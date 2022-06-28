@@ -25,6 +25,10 @@ public class BookTO {
 
     @Column(name = "TITLE", length = 200)
     private String title;
+        
+    @Column(name = "URL", length = 200)
+    private String url;
+
 
     public UUID getId() {
         return id;
@@ -48,5 +52,23 @@ public class BookTO {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    @Override
+    public String toString() {
+        return "BookTO{" +
+                "id=" + id +
+                ", author='" + author + '\'' +
+                ", title='" + title + '\'' +
+                ", url='" + url + '\'' +
+                '}';
     }
 }
